@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  background-image: linear-gradient(155deg, #1d2949, #263658, #37598c, #37598c);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  padding-top: 7vh;
+}
+
+.podfic {
+  max-width: 500px;
+  margin: auto;
+  background-image: linear-gradient(#1d2949, #263658, #37598c, #37598c);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 20, 0.8);
+}
+
+.podfic img {
+  max-width: 500px;
+  width: 85%;
+  display: block;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -o-border-radius: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(
+        155deg,
+        #a18d8a,
+        #786764,
+        #a18d8a,
+        #c9aca7,
+        #a18d8a,
+        #404141,
+        #544745
+      )
+      border-box;
+  border: 15px solid transparent;
+  -webkit-box-shadow: 0 0 20px rgba(20, 30, 44, 0.8);
+  box-shadow: 0 0 20px rgba(10, 20, 44, 0.8);
+}
+
+.podfic:hover img {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+
+.description {
+  max-width: 500px;
+  position: absolute;
+  margin: auto;
+  margin-top: -400px;
+  display: block;
+  text-align: center;
+  background-color: none;
+  opacity: 0;
+}
+
+.podfic:hover .description {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  opacity: 1;
+}
+
+.podfic p:empty {
+  display: none !important;
+}
+
+.podfic p,
+.podfic h2,
+.podfic h4,
+.podfic a:visited {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+.podfic a {
+  text-decoration: underline rgba(255, 255, 255, 0.29);
+  text-underline-offset: 0.15em;
+  text-align: center;
+  color: white;
+}
+
+.podfic p {
+  font-weight: 200;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+.podfic h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: -0.7em;
+}
+
+.podfic a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  color: #8fa6cc;
+}
+
+:not(.userstuff) > audio {
+  width: 100%;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #37598c;
+}
+
+audio {
+  border: 1px white solid;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -o-border-radius: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+.podfic {
+  max-width: 85vw;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+}
+
+.podfic img {
+  max-width: 85vw;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -o-border-radius: 500px;
+  }
+
+  .description {
+  max-width: 85vw;
+  margin-top: -300px;
+}
+
+  .podfic p {
+  font-size: 0.9em;
+}
+
+.podfic h2 {
+  font-size: 1.1em;
+}
+}
