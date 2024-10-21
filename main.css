@@ -35,9 +35,7 @@ body {
   margin-right: auto;
   background:
     linear-gradient(white, white) padding-box,
-    linear-gradient(
-        155deg, #d38964, #d38964, #f4a989, #fec3ac, #f4a989, #a95533, #f4a989, #d38964
-      )
+    linear-gradient(155deg, #d38964, #d38964, #f4a989, #fec3ac, #f4a989, #a95533, #f4a989, #d38964)
       border-box;
   border: 15px solid transparent;
   -webkit-box-shadow: 0 0 20px rgba(20, 30, 44, 0.8);
